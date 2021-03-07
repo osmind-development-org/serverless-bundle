@@ -399,7 +399,7 @@ module.exports = ignoreWarmupPlugin({
   target: "node",
   context: __dirname,
   // Disable verbose logs
-  stats: ENABLE_STATS ? "normal" : "errors-only",
+  stats: ENABLE_STATS ? "verbose" : "errors-only",
   devtool: ENABLE_SOURCE_MAPS ? "source-map" : false,
   externals: computedExternals,
   mode: isLocal ? "development" : "production",
